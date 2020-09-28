@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Happy Birthday</title>
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Lato|Lobster|Source+Sans+Pro" rel="stylesheet">
+    <style>
+        body{
+            background: #c31432;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            color: white;
+            
+            background-size: 
+            
+        }
+
+        .container{
+            top: 10%;
+            margin-top: 10%;
+            width: 100%;
+        }
+        .heads{
+            font-size: 50px;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+        .get{
+            margin-left: 37%;
+            margin-top: 2%;
+            text-align: center;
+            border: 2px solid aquamarine;
+
+            width: 20%;
+        }
+        @font-face {
+            font-family: "My Custom Font";
+            src: url(http://www.example.org/mycustomfont.ttf) format("truetype");
+        }
+        .heads:hover{
+            -ms-transform: rotate(360deg); /* IE 9 */
+            -webkit-transform: rotate(360deg); /* Chrome, Safari, Opera */
+            transform: rotate(360deg);
+
+        }
+    </style>
+
+
+</head>
+<div class="container">
+    <div class="main">
+        <h1 class="heads" align="center">WELCOME HERE! <br> Radhika</h1>
+        <br>
+        <input class="get" type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+               title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" placeholder="Password"
+               required>
+
+        <button class="btn" onclick="onSubmit()">SURPRISE</button>
+    </div>
+</div>
+
+<script>
+    function onSubmit()
+    {
+        if (document.getElementById('psw').value == '12345678')
+        {
+            window.location.href = 'Happy.html';
+        }
+        else
+            {
+                alert('Please check your passcode and try again');
+            }
+    }
+</script>
+</html>
